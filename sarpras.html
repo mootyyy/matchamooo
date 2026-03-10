@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Negeri 1 Sleman - Sejarah Sekolah</title>
+    <style>
+        :root {
+            --primary: #4682B4;
+            --primary-light: #eff6ff;
+            --border-color: #e2e8f0;
+            --card-bg: #ffffff;
+            --text-muted: #64748b;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: georgia;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height:1.4;
+        }
+      header  img {
+            width: 100%;
+            display: flex;
+        }
+        nav{
+            margin: 0;
+            width: 100%;
+            background-color: lightblue;
+        }
+       nav ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        nav ul li{
+            padding: 10px 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight:bold ;
+        }
+        nav ul li a:hover{
+            color: blue;
+            background-color: white;
+        }
+        main {
+            padding: 0px;
+            margin-top: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: orange;
+        }
+
+        .motto {
+            background-color: #4682B4;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 0px;
+            color: white;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .page-title-banner {
+            background-color: var(--primary);
+            color: white;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-title-banner h1 {
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem 0;
+            color: white;
+        }
+
+        .page-title-banner p {
+            font-size: 1.125rem;
+            margin: 0;
+            color: #dbeafe;
+        }
+        .section-title {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid orange;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .text-justify { text-align: justify; }
+        .mb-4 { margin-bottom: 1rem; }
+        .table-wrapper {
+            overflow-x: auto;
+            background-color: var(--card-bg);
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .data-table th, .data-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table th {
+            background-color: #e2e8f0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .data-table td { vertical-align: top; }
+        .data-table tbody tr:hover { background-color: #f1f5f9; }
+        .data-table tbody tr:nth-child(even) { background-color: #f8fafc; }
+
+        .col-date { width: 25%; font-weight: bold; }
+        .col-number { width: 4rem; text-align: center; }
+        .col-year { width: 10rem; text-align: center; }
+        .text-center { text-align: center; }
+        .list-decimal {
+            margin-left: 1.25rem;
+            margin-top: 0.5rem;
+        }
+        .principal-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .principal-layout { grid-template-columns: 1fr 2fr; }
+        }
+        .bio-card {
+            background-color: var(--primary-light);
+            border: 1px solid #dbeafe;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            position: sticky;
+            top: 1.5rem;
+            align-self: start;
+        }
+
+        .bio-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #bfdbfe;
+        }
+
+        .bio-item { margin-bottom: 1rem; }
+        .bio-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: bold; }
+        .bio-value { font-size: 1.125rem; font-weight: bold; margin-top: 0.25rem; }
+        .bio-list { margin-left: 1.25rem; margin-top: 0.25rem; }
+        .highlight-row {
+            background-color: var(--primary-light) !important;
+            border-left: 4px solid var(--primary);
+        }
+        .highlight-row td { color: #1e3a8a; font-weight: bold; }
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="headersmansa.PNG">
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="berita.html">Berita</a></li>
+        <li><a href="sejarahsekolah.html">Sejarah Sekolah</a></li>
+        <li><a href="sarpras.html">Sarana & Prasana</a></li>
+        <li><a href="dataamurid.html">Data Murid</a></li>
+    </ul>
+</nav>
+<section>
+<h2>Sarana dan Prasarana</h2>
+<p><b>ruang kelas:</b> X, XI, dan XII MIPA dan IPS</p>
+<p><b>Ruang Guru & Kepala Sekolah</b></p>
+<p><b>Laboratorium:</b> Bahasa, Fisika, Kimia, Biologi, dan Komputer</p>
+<p><b>Ruang Ibadah:</b> Masjid, ruang agama Katolik dan Kristen</p>
+<p><b>Ruang Kesenian dan Musik</b></p>
+<p><b>Toilet/WC:</b> Terpisah untuk guru, siswa laki-laki, siswa perempuan, dan tamu</p>
+<p><b>Ruang UKS, Perpustakaan, Bimbingan Konseling</b></p>
+<p><b>Kamar mandi, gudang, koperasi, tempat parkir, dan taman</b></p>
+<p><b>Aula, lapangan, dan fasilitas olahraga</b></p>
+</section>
+    <footer>
+        <p>&copy; 2026 SMAN 1 Sleman. Informasi Sejarah Sekolah.</p>
+    </footer>
+</section>
+</body>
+</html>
